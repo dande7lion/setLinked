@@ -58,5 +58,4 @@ Chart based on program results (drawn with gnuplot):
 
 
 ### Additional information
-* Program creates two files needed to draw a chart: ```ascending``` and ```descending``` 
-
+* Program creates two files needed to draw charts: ```ascending``` and ```descending``` 
