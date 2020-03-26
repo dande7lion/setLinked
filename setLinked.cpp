@@ -18,8 +18,8 @@ public:
 	bool insertValue(int value);
 	bool deleteValue(int value);
 	bool containsValue(int value);
-	linkedSet sum(linkedSet linkedSetB);
-	linkedSet setsUnion(linkedSet linkedSetB);
+	linkedSet intersection(linkedSet linkedSetB);
+	linkedSet unionOfSets(linkedSet linkedSetB);
 	linkedSet difference(linkedSet linkedSetB);
 	bool identity(linkedSet linkedSetB);
 	void print();
@@ -105,7 +105,7 @@ void addElement(position &tmp, int value){
 
 }
 
-linkedSet linkedSet::sum(linkedSet B){
+linkedSet linkedSet::intersection(linkedSet B){
 	position p = l;
 	position q = B.l;
 	linkedSet result;
@@ -173,7 +173,7 @@ bool linkedSet::identity(linkedSet B){
 }
 	
 
-linkedSet linkedSet::setsUnion(linkedSet B){
+linkedSet linkedSet::unionOfSets(linkedSet B){
 	position p = l;
 	position q = B.l;
 	linkedSet result;

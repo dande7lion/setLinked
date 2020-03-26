@@ -1,0 +1,9 @@
+#!/usr/bin/gnuplot
+
+set title "Inserting elements (descending)"
+set xlabel "n"
+set ylabel "time"
+f(n) = b * n + c
+fit f(x) "descending" using 1:2 via b , c
+plot "descending" with points, f(x)
+pause -1 "Press enter to continue"

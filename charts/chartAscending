@@ -1,0 +1,9 @@
+#!/usr/bin/gnuplot
+
+set title "Inserting elements (ascending)"
+set xlabel "n"
+set ylabel "time"
+f(n) = a * n**2 + b * n + c
+fit f(x) "ascending" using 1:2 via a, b, c
+plot "ascending" with points, f(x)
+pause -1 "Press enter to continue"
