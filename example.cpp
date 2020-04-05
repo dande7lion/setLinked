@@ -15,12 +15,12 @@ int main(){
 
 	set.print();
 
-	cout << "After deleting 180: \n";
+	cout << endl << "After deleting 180: \n";
 
 	set.deleteValue(180);
 	set.print();
 
-	cout << "Set(2) after inserting elements:\n";
+	cout << endl << "Set(2) after inserting elements:\n";
 
 	linkedSet set2;
 	set2.insertValue(15);
@@ -32,24 +32,24 @@ int main(){
 
 	linkedSet result;
 	result = set.unionOfSets(set2);
-	cout << "Union: " << endl;
+	cout << endl << "Union: " << endl;
 	result.print();
 
-	cout << "Identity: " ;
+	cout << endl  << "Identity: " ;
 	if(set.identity(set2))
 		cout << "true" << endl;
 	else cout << "false" << endl;
 
 	result = set2.difference(set);
-	cout << "Difference: (2 - 1): " << endl;
+	cout << endl << "Difference: (2 - 1): " << endl;
 	result.print();
 
 	result = set.difference(set2);
-	cout << "Difference: (1 - 2): " << endl;
+	cout << endl << "Difference: (1 - 2): " << endl;
 	result.print();
 
 	result = set.intersection(set2);
-	cout << "Intersection: " << endl;
+	cout << endl << "Intersection: " << endl;
 	result.print();
 
 

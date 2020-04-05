@@ -105,7 +105,7 @@ void addElement(position &tmp, int value){
 
 }
 
-linkedSet linkedSet::intersection(linkedSet B){
+linkedSet linkedSet::unionOfSets(linkedSet B){
 	position p = l;
 	position q = B.l;
 	linkedSet result;
@@ -173,7 +173,7 @@ bool linkedSet::identity(linkedSet B){
 }
 	
 
-linkedSet linkedSet::unionOfSets(linkedSet B){
+linkedSet linkedSet::intersection(linkedSet B){
 	position p = l;
 	position q = B.l;
 	linkedSet result;
